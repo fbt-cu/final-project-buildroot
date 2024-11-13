@@ -38,6 +38,14 @@ start)
     load_or_unload_module load faulty /dev/faulty
     load_or_unload_module load hello ""
     aesdchar_load
+    echo "LOADING spidev and spi-bcm2835 module"
+    modprobe spidev
+    modprobe spi-bcm2835
+    sleep 1
+    ip link set can0 up type can bitrate 1000000
+    ip link set can1 up type can bitrate 1000000
+    ifconfig can0 txqueuelen 65536
+    ifconfig can1 txqueuelen 65536
     ;;
 stop)
     echo "UNLOADING scull, faulty, hello, and aesdchar modules"
@@ -45,6 +53,9 @@ stop)
     load_or_unload_module unload faulty /dev/faulty
     load_or_unload_module unload hello ""
     aesdchar_unload
+    echo "UNLOADING spidev and spi-bcm2835 module"
+    rmmod spi-bcm2835
+    rmmod spidev
     ;;
 *)
     echo "Usage: $0 {start|stop}"

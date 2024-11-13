@@ -30,3 +30,9 @@ dtparam=krnbt=on
 
 # enable 64bits support
 arm_64bit=1
+
+# add support for SPI and CAN
+dtparam=spi=on
+dtoverlay=mcp2515-can1,oscillator=16000000,interrupt=25
+dtoverlay=mcp2515-can0,oscillator=16000000,interrupt=23
+dtoverlay=spi-bcm2835-overlay

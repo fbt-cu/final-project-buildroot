@@ -5,11 +5,11 @@
 #
 ##############################################################
 
-AESDCHARDRIVER_VERSION = '77e55c427987e3abb98c8f40e681ad62c4ec9276'
+AESDCHARDRIVER_VERSION = '5fa9d5940500ff3825d8d4f5bf933606dbec40ca'
 # Note: Be sure to reference the *ssh* repository URL here (not https) to work properly
 # with ssh keys and the automated build/test system.
 # Your site should start with git@github.com:
-AESDCHARDRIVER_SITE = 'git@github.com:cu-ecen-aeld/assignments-3-and-later-fbt-cu.git'
+AESDCHARDRIVER_SITE = 'git@github.com:fbt-cu/final-project-can-socket.git'
 AESDCHARDRIVER_SITE_METHOD = git
 AESDCHARDRIVER_GIT_SUBMODULES = YES
 

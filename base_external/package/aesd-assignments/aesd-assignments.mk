@@ -6,11 +6,11 @@
 ##############################################################
 
 #TODO: Fill up the contents below in order to reference your assignment 3 git contents
-AESD_ASSIGNMENTS_VERSION = '77e55c427987e3abb98c8f40e681ad62c4ec9276'
+AESD_ASSIGNMENTS_VERSION = '5fa9d5940500ff3825d8d4f5bf933606dbec40ca'
 # Note: Be sure to reference the *ssh* repository URL here (not https) to work properly
 # with ssh keys and the automated build/test system.
 # Your site should start with git@github.com:
-AESD_ASSIGNMENTS_SITE = 'git@github.com:cu-ecen-aeld/assignments-3-and-later-fbt-cu.git'
+AESD_ASSIGNMENTS_SITE = 'git@github.com:fbt-cu/final-project-can-socket.git'
 AESD_ASSIGNMENTS_SITE_METHOD = git
 AESD_ASSIGNMENTS_GIT_SUBMODULES = YES
 

@@ -1,0 +1,4 @@
+config BR2_PACKAGE_CAN_TEST
+	bool "can-test"
+	help
+	  Includes the can-test package
